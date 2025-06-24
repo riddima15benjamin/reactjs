@@ -59,7 +59,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  border-bottom: 2px solid #e8f5e8;
+  border-bottom: 2px solid 
+#e8f5e8;
   background-color: white;
   z-index: 1000;
   box-sizing: border-box;
@@ -88,7 +89,8 @@ body {
 }
 
 .nav-links a:hover {
-  color: #4caf50;
+  color: 
+#4caf50;
 }
 
 .nav-links a::after {
@@ -98,7 +100,8 @@ body {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #4caf50;
+  background-color: 
+#4caf50;
   transition: width 0.3s ease;
 }
 
@@ -112,11 +115,10 @@ body {
 }
 
 .user-icon {
-  
+
   color: rgba(0, 0, 0, 0.715);
   cursor: pointer;
 }
-
 
 /* Headers */
 h1,h3 {
