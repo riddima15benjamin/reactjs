@@ -842,6 +842,13 @@ input[type="email"]::placeholder {
   }
 }
 
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+  .about-section {
+    margin-top: 60px; /* Set this to your navbar's height */
+  }
+}
+
 /* Print Styles */
 @media print {
   .button, .button-danger-instance, .email-subscription, .footer {
