@@ -64,10 +64,6 @@ body {
   z-index: 1000;
   box-sizing: border-box;
 }
-
-
-
-
 .nav-links {
   display: flex;
   gap: 30px;
@@ -151,10 +147,8 @@ h2 {
 }
 
 /* About Section */
-/* About Section - Hero Layout */
-/* Hero Section with Background Image */
 .frame-1021.about-section {
-  background-image: url('\main-bg.jpg'); /* Replace with your actual image path */
+  background-image: url('\main-bg.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -182,7 +176,6 @@ h2 {
   );
   z-index: 1;
 }
-
 /* Container for hero content */
 .frame-1021 .frame-1020 {
   position: relative;
@@ -381,17 +374,6 @@ h2 {
   }
 }
 
-/* Remove or comment out these old styles if they exist in your CSS */
-/*
-.tree-counter-box,
-.tree-counter-heading,
-.countup-wrapper,
-.countup-text {
-  // Remove these old styles
-}
-*/
-
-
 /* Image Credit Footer */
 .image-credit {
   background: rgba(0, 0, 0, 0.8);
@@ -413,8 +395,6 @@ h2 {
 .image-credit a:hover {
   color: white !important;
 }
-
-
 .countup-wrapper {
 
   display: flex;
@@ -430,8 +410,6 @@ h2 {
   font-weight: bold;
   color: #22543d;
 }
-
-
 /* Campaign Section Fix */
 .campaign-section {
   background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
@@ -541,8 +519,6 @@ h2 {
     padding: 30px 15px;
   }
 }
-
-/* Newsletter Section */
 /* Newsletter Section */
 .newsletter-section {
   background-color: #f8f9fa;
@@ -673,7 +649,7 @@ h2 {
   border-top: 1px solid #4caf50;
   padding-top: 20px;
   text-align: center;
-  color: #c8e6c9;
+  color: rgba(0, 128, 0, 0.504);
 }
 
 /* Enhanced Button Labels */
