@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./DesktopHome.css";
 import { FaRegUserCircle } from "react-icons/fa"; // Font Awesome user icon
 import { db } from "./firebaseConfig.js";
@@ -9,7 +9,89 @@ import { useInView } from "react-intersection-observer";
 export const DesktopHome = ({ className = "" }) => {
   const [email, setEmail] = useState("");
 
-  // Enhanced Tree Counter Component with Multiple Stats
+  const AwarenessCarousel = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+    
+    const slides = [
+      {
+        image: "/medg4.jpg",
+        title: "Interactive Workshops",
+        description: "Engaging educational sessions with students across Indore colleges"
+      },
+      {
+        image: "/medg5.jpg", 
+        title: "Awareness Campaigns",
+        description: "Breaking taboos and spreading knowledge about sustainable menstrual health"
+      },
+      {
+        image: "/medg6.jpg", // Add more images as needed
+        title: "Community Outreach",
+        description: "Connecting with young women to promote eco-friendly solutions"
+      },
+      {
+        image: "/medg7.jpg",
+        title: "Educational Impact", 
+        description: "Empowering informed choices for health and environmental sustainability"
+      }
+    ];
+
+    // Auto-play functionality
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+      }, 4000);
+      
+      return () => clearInterval(interval);
+    }, [slides.length]);
+
+    const nextSlide = () => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    };
+
+    const prevSlide = () => {
+      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    };
+
+    const goToSlide = (index) => {
+      setCurrentSlide(index);
+    };
+
+    return (
+      <div className="awareness-carousel-container">
+        <div className="carousel-wrapper">
+          <div className="carousel-slides" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+            {slides.map((slide, index) => (
+              <div key={index} className="carousel-slide">
+                <img src={slide.image} alt={slide.title} />
+                <div className="slide-overlay">
+                  <h4>{slide.title}</h4>
+                  <p>{slide.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <button className="carousel-nav prev" onClick={prevSlide}>
+            ‹
+          </button>
+          <button className="carousel-nav next" onClick={nextSlide}>
+            ›
+          </button>
+          
+          <div className="carousel-indicators">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                className={`indicator ${index === currentSlide ? 'active' : ''}`}
+                onClick={() => goToSlide(index)}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   const TreeCounter = () => {
     const { ref, inView } = useInView({
       triggerOnce: true,
@@ -181,21 +263,21 @@ export const DesktopHome = ({ className = "" }) => {
               together, we can create lasting positive change.
             </p>
             
-            <section id="discover" className="frame-1065 campaign-section">
-          <div className="frame-1020">
-            <h3>Spreading Awareness, One Campus at a Time</h3>
-            <p>At MedGreen, our mission is to create a sustainable and informed future by advocating for
-               environmentally conscious menstrual practices. We actively visit schools and colleges across
-               Indore to engage with young girls and educate them about the benefits of using menstrual cups. 
-               By encouraging this eco-friendly and cost-effective alternative, we aim to reduce menstrual waste, 
-               break taboos surrounding menstruation, and empower girls to make informed choices for their health and the planet.</p>
-            </div>
-          <div className="campaign-image">
-            <img src="/medg4.jpg" alt="College Talk" />
-          </div>
-          <div className="campaign-image">
-            <img src="/medg5.jpg" alt="College Talk" />
-          </div>
+                       <section className="frame-1065 awareness-section">
+              <div className="awareness-content">
+                <div className="frame-1020">
+                  <h3>Spreading Awareness, One Campus at a Time</h3>
+                  <p>
+                    At MedGreen, our mission is to create a sustainable and informed future by advocating for
+                    environmentally conscious menstrual practices. We actively visit schools and colleges across
+                    Indore to engage with young girls and educate them about the benefits of using menstrual cups. 
+                    By encouraging this eco-friendly and cost-effective alternative, we aim to reduce menstrual waste, 
+                    break taboos surrounding menstruation, and empower girls to make informed choices for their health and the planet.
+                  </p>
+                </div>
+                
+                <AwarenessCarousel />
+              </div>
             </section>
             <div className="mission-points">
               <div className="mission-point">
