@@ -24,14 +24,9 @@ export const DesktopHome = ({ className = "" }) => {
         description: "Breaking taboos and spreading knowledge about sustainable menstrual health"
       },
       {
-        image: "/medg6.jpg", // Add more images as needed
+        image: "/medg6.jpg", 
         title: "Community Outreach",
         description: "Connecting with young women to promote eco-friendly solutions"
-      },
-      {
-        image: "/medg7.jpg",
-        title: "Educational Impact", 
-        description: "Empowering informed choices for health and environmental sustainability"
       }
     ];
 
