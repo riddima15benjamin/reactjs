@@ -175,7 +175,7 @@ export const DesktopHome = ({ className = "" }) => {
           <h3>About Our Mission</h3>
           <div className="about-content">
             <p>
-              The MedGreen Club of Indore was founded by doctors of Indore with a vision to transform 
+              The MedGreen Club of Indore was founded by doctors with a vision to transform 
               our city into a model of environmental sustainability. We believe 
               that every individual has the power to make a difference, and 
               together, we can create lasting positive change.
@@ -190,6 +190,12 @@ export const DesktopHome = ({ className = "" }) => {
                By encouraging this eco-friendly and cost-effective alternative, we aim to reduce menstrual waste, 
                break taboos surrounding menstruation, and empower girls to make informed choices for their health and the planet.</p>
             </div>
+          <div className="campaign-image">
+            <img src="/medg4.jpg" alt="College Talk" />
+          </div>
+          <div className="campaign-image">
+            <img src="/medg5.jpg" alt="College Talk" />
+          </div>
             </section>
             <div className="mission-points">
               <div className="mission-point">
