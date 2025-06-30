@@ -183,7 +183,12 @@ export const DesktopHome = ({ className = "" }) => {
             
             <section id="discover" className="frame-1065 campaign-section">
           <div className="frame-1020">
-            <h3>"name here"</h3>
+            <h3>Spreading Awareness, One Campus at a Time</h3>
+            <p>At MedGreen, our mission is to create a sustainable and informed future by advocating for
+               environmentally conscious menstrual practices. We actively visit schools and colleges across
+               Indore to engage with young girls and educate them about the benefits of using menstrual cups. 
+               By encouraging this eco-friendly and cost-effective alternative, we aim to reduce menstrual waste, 
+               break taboos surrounding menstruation, and empower girls to make informed choices for their health and the planet.</p>
             </div>
             </section>
             <div className="mission-points">
