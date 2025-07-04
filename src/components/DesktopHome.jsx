@@ -86,38 +86,37 @@ export const DesktopHome = ({ className = "" }) => {
       </div>
     );
   };
+// const TreeCounter = () => {
+//   const { ref, inView } = useInView({
+//     triggerOnce: true,
+//     threshold: 0.6, // triggers when 60% visible
+//   });
 
-  const TreeCounter = () => {
-    const { ref, inView } = useInView({
-      triggerOnce: true,
-      threshold: 0.6, // triggers when 60% visible
-    });
-
-    return (
-      <div ref={ref} className="tree-counter-section">
-        <div className="stats-container">
-          <div className="stat-item">
-            <span className="stat-number">
-              {inView && <CountUp end={250} duration={3} />}K+
-            </span>
-            <div className="stat-label">Trees Planted</div>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">
-              {inView && <CountUp end={500} duration={3} />}T+
-            </span>
-            <div className="stat-label">Carbon Offset (Tons)</div>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">
-              {inView && <CountUp end={50} duration={3} />}K+
-            </span>
-            <div className="stat-label">Volunteers Reached</div>
-          </div>
-        </div>
-      </div>
-    );
-  };
+//   return (
+//     <div ref={ref} className="tree-counter-section">
+//       <div className="stats-container">
+//         <div className="stat-item">
+//           <span className="stat-number">
+//             {inView && <CountUp end={250} duration={3} />}K+
+//           </span>
+//           <div className="stat-label">Trees Planted</div>
+//         </div>
+//         <div className="stat-item">
+//           <span className="stat-number">
+//             {inView && <CountUp end={500} duration={3} />}T+
+//           </span>
+//           <div className="stat-label">Carbon Offset (Tons)</div>
+//         </div>
+//         <div className="stat-item">
+//           <span className="stat-number">
+//             {inView && <CountUp end={50} duration={3} />}K+
+//           </span>
+//           <div className="stat-label">Volunteers Reached</div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
@@ -240,6 +239,9 @@ export const DesktopHome = ({ className = "" }) => {
           <div className="news-card bg-white rounded-2xl shadow-lg overflow-hidden p-6">
             <div className="relative" style={{ display: 'flex', justifyContent: 'center' }}>
               <div style={{ width: '100%' }}>
+                 <p className="text-gray-600 text-sm">
+                Recent newspaper coverage of our environmental awareness initiatives and community activities
+              </p>
                 <img 
                   src="/newspaper/news.png" 
                   alt="Club News Coverage - Environmental Awareness Activities"
@@ -257,9 +259,7 @@ export const DesktopHome = ({ className = "" }) => {
             
             {/* Optional Caption */}
             <div className="news-caption mt-4 text-center">
-              <p className="text-gray-600 text-sm">
-                Recent newspaper coverage of our environmental awareness initiatives and community activities
-              </p>
+             
             </div>
           </div>
         </div>
