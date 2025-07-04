@@ -247,7 +247,7 @@ export const DesktopHome = ({ className = "" }) => {
           <div className="news-card bg-white rounded-2xl shadow-lg overflow-hidden p-6">
             <div className="relative">
               <img 
-                src="C:\Users\Riddima\Documents\medgreen-website-temp\public\newspaper\news.png" 
+                src="/newspaper/news.png" 
                 alt="Club News Coverage - Environmental Awareness Activities"
                 className="news-image w-full h-auto rounded-lg shadow-md"
                 style={{
