@@ -148,6 +148,130 @@ export const DesktopHome = ({ className = "" }) => {
       });
     }
   };
+
+  const ClubNewsSection = () => {
+  return (
+    <>
+      {/* Mobile-specific styles */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .news-section {
+            padding: 8px 12px !important;
+          }
+          
+          .news-container {
+            max-width: 100% !important;
+            margin: 0 !important;
+          }
+          
+          .news-header h2 {
+            font-size: 1.75rem !important;
+            line-height: 1.2 !important;
+            margin-bottom: 8px !important;
+          }
+          
+          .news-header p {
+            font-size: 0.9rem !important;
+            padding: 0 8px !important;
+          }
+          
+          .news-card {
+            border-radius: 12px !important;
+            padding: 12px !important;
+            margin: 0 !important;
+          }
+          
+          .news-image {
+            border-radius: 8px !important;
+            max-height: 400px !important;
+          }
+          
+          .news-badge {
+            bottom: 8px !important;
+            left: 8px !important;
+            padding: 4px 8px !important;
+            font-size: 0.75rem !important;
+          }
+          
+          .news-caption {
+            margin-top: 12px !important;
+            font-size: 0.8rem !important;
+            padding: 0 4px !important;
+            line-height: 1.4 !important;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .news-section {
+            padding: 6px 8px !important;
+          }
+          
+          .news-header {
+            margin-bottom: 16px !important;
+          }
+          
+          .news-header h2 {
+            font-size: 1.5rem !important;
+          }
+          
+          .news-card {
+            padding: 8px !important;
+          }
+          
+          .news-image {
+            max-height: 300px !important;
+          }
+          
+          .news-badge {
+            bottom: 6px !important;
+            left: 6px !important;
+            padding: 3px 6px !important;
+            font-size: 0.7rem !important;
+          }
+        }
+      `}</style>
+
+      <section className="news-section bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4">
+        <div className="news-container max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="news-header text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">
+              Club News & Updates
+            </h2>
+            <p className="text-gray-600">
+              Latest news coverage of our club activities
+            </p>
+          </div>
+
+          {/* News Image Display */}
+          <div className="news-card bg-white rounded-2xl shadow-lg overflow-hidden p-6">
+            <div className="relative">
+              <img 
+                src="/api/placeholder/800/600" 
+                alt="Club News Coverage - Environmental Awareness Activities"
+                className="news-image w-full h-auto rounded-lg shadow-md"
+                style={{
+                  maxHeight: '600px',
+                  objectFit: 'contain'
+                }}
+              />
+              <div className="news-badge absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm">
+                Press Coverage
+              </div>
+            </div>
+            
+            {/* Optional Caption */}
+            <div className="news-caption mt-4 text-center">
+              <p className="text-gray-600 text-sm">
+                Recent newspaper coverage of our environmental awareness initiatives and community activities
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
   
   return (
     <div className={`desktop-home ${className}`}>
@@ -315,6 +439,7 @@ export const DesktopHome = ({ className = "" }) => {
         </section>
                 {/* Enhanced Tree Counter */}
         <TreeCounter />
+        <ClubNewsSection />
 
       </main>
 
