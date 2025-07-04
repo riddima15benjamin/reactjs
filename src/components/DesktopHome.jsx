@@ -247,8 +247,6 @@ export const DesktopHome = ({ className = "" }) => {
                   style={{
                     width: '100%',
                     height: 'auto',
-                    maxWidth: '600px',      // limits image width on large screens
-                    maxHeight: '350px',     // limits image height
                     objectFit: 'contain',
                     display: 'block',
                     margin: '0 auto'
