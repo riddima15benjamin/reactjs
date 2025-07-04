@@ -433,6 +433,9 @@ export const DesktopHome = ({ className = "" }) => {
           </form>
         </section>
                 {/* Enhanced Tree Counter */}
+                {/*
+      <TreeCounter />
+      */}
         
         <ClubNewsSection />
 
