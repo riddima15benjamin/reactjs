@@ -169,11 +169,7 @@ export const DesktopHome = ({ className = "" }) => {
             line-height: 1.2 !important;
             margin-bottom: 8px !important;
           }
-          
-          .news-header p {
-            font-size: 0.9rem !important;
-            padding: 0 8px !important;
-          }
+        
           
           .news-card {
             border-radius: 12px !important;
@@ -238,9 +234,6 @@ export const DesktopHome = ({ className = "" }) => {
             <h2 className="text-3xl font-bold text-gray-800 mb-2">
               Club News & Updates
             </h2>
-            <p className="text-gray-600">
-              Latest news coverage of our club activities
-            </p>
           </div>
 
           {/* News Image Display */}
@@ -251,16 +244,13 @@ export const DesktopHome = ({ className = "" }) => {
                 alt="Club News Coverage - Environmental Awareness Activities"
                 className="news-image mx-auto rounded-lg shadow-md"
                 style={{
-                  maxHeight: '450px',
-                  maxWidth: '550px',
+                  maxHeight: '650px',
+                  maxWidth: '650px',
                   width: '100%',
                   objectFit: 'contain',
                   display: 'block'
                 }}
               />
-              <div className="news-badge absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm">
-                Press Coverage
-              </div>
             </div>
             
             {/* Optional Caption */}
