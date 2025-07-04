@@ -239,16 +239,19 @@ export const DesktopHome = ({ className = "" }) => {
           {/* News Image Display */}
           <div className="news-card bg-white rounded-2xl shadow-lg overflow-hidden p-6">
             <div className="relative" style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ maxWidth: '350px', width: '100%' }}>
+              <div style={{ width: '100%' }}>
                 <img 
                   src="/newspaper/news.png" 
                   alt="Club News Coverage - Environmental Awareness Activities"
                   className="news-image mx-auto rounded-lg shadow-md"
                   style={{
-                    maxHeight: '220px',
                     width: '100%',
+                    height: 'auto',
+                    maxWidth: '600px',      // limits image width on large screens
+                    maxHeight: '350px',     // limits image height
                     objectFit: 'contain',
-                    display: 'block'
+                    display: 'block',
+                    margin: '0 auto'
                   }}
                 />
               </div>
