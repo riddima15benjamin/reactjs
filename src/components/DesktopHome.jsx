@@ -249,10 +249,13 @@ export const DesktopHome = ({ className = "" }) => {
               <img 
                 src="/newspaper/news.png" 
                 alt="Club News Coverage - Environmental Awareness Activities"
-                className="news-image w-full h-auto rounded-lg shadow-md"
+                className="news-image mx-auto rounded-lg shadow-md"
                 style={{
-                  maxHeight: '600px',
-                  objectFit: 'contain'
+                  maxHeight: '250px',
+                  maxWidth: '350px',
+                  width: '100%',
+                  objectFit: 'contain',
+                  display: 'block'
                 }}
               />
               <div className="news-badge absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded-full text-sm">
