@@ -251,8 +251,8 @@ export const DesktopHome = ({ className = "" }) => {
                 alt="Club News Coverage - Environmental Awareness Activities"
                 className="news-image mx-auto rounded-lg shadow-md"
                 style={{
-                  maxHeight: '250px',
-                  maxWidth: '350px',
+                  maxHeight: '450px',
+                  maxWidth: '550px',
                   width: '100%',
                   objectFit: 'contain',
                   display: 'block'
