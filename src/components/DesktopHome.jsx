@@ -86,6 +86,84 @@ export const DesktopHome = ({ className = "" }) => {
       </div>
     );
   };
+
+  const KasturbagramCarousel = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+    
+    const slides = [
+      {
+        image: "/kast1.jpg",
+        title: "Interactive Workshops",
+        description: "Engaging educational sessions with students across Indore colleges"
+      },
+      {
+        image: "/kast2.jpg", 
+        title: "Awareness Campaigns",
+        description: "Breaking taboos and spreading knowledge about sustainable menstrual health"
+      },
+      {
+        image: "/kast3.jpg", 
+        title: "Community Outreach",
+        description: "Connecting with young women to promote eco-friendly solutions"
+      }
+    ];
+
+    // Auto-play functionality
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+      }, 4000);
+      
+      return () => clearInterval(interval);
+    }, [slides.length]);
+
+    const nextSlide = () => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    };
+
+    const prevSlide = () => {
+      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    };
+
+    const goToSlide = (index) => {
+      setCurrentSlide(index);
+    };
+
+    return (
+      <div className="awareness-carousel-container">
+        <div className="carousel-wrapper">
+          <div className="carousel-slides" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+            {slides.map((slide, index) => (
+              <div key={index} className="carousel-slide">
+                <img src={slide.image} alt={slide.title} />
+                <div className="slide-overlay">
+                  <h4>{slide.title}</h4>
+                  <p>{slide.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <button className="carousel-nav prev" onClick={prevSlide}>
+            ‹
+          </button>
+          <button className="carousel-nav next" onClick={nextSlide}>
+            ›
+          </button>
+          
+          <div className="carousel-indicators">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                className={`indicator ${index === currentSlide ? 'active' : ''}`}
+                onClick={() => goToSlide(index)}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
 // const TreeCounter = () => {
 //   const { ref, inView } = useInView({
 //     triggerOnce: true,
@@ -391,6 +469,24 @@ export const DesktopHome = ({ className = "" }) => {
                 </div>
                 
                 <AwarenessCarousel />
+              </div>
+            </section>
+
+            
+             <section className="frame-1065 awareness-section">
+              <div className="awareness-content">
+                <div className="frame-1020">
+                  <h3>Kasturbagram Fruit Trees Plantation Drive</h3>
+                  <p>
+                    As part of our mission to create greener, healthier communities, MedGreen Club of Indore undertook a large-scale 
+                    fruit tree plantation drive at Kasturbagram. Over 200 fruit-bearing trees were planted with the goal of contributing 
+                    to both ecological restoration and community nourishment. This initiative not only supports biodiversity and carbon 
+                    sequestration, but also offers a sustainable source of nutrition for the local residents in the coming years. 
+                    By focusing on fruit trees, we ensure that our green efforts yield long-term social and environmental benefits.
+                  </p>
+                </div>
+                
+                <KasturbagramCarousel />
               </div>
             </section>
             <div className="mission-points">
