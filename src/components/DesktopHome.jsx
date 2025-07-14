@@ -22,11 +22,6 @@ export const DesktopHome = ({ className = "" }) => {
         image: "/medg5.jpg", 
         title: "Awareness Campaigns",
         description: "Breaking taboos and spreading knowledge about sustainable menstrual health"
-      },
-      {
-        image: "/medg6.jpg", 
-        title: "Community Outreach",
-        description: "Connecting with young women to promote eco-friendly solutions"
       }
     ];
 
