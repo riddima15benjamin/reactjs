@@ -450,7 +450,7 @@ export const DesktopHome = ({ className = "" }) => {
               together, we can create lasting positive change.
             </p>
             
-                       <section className="frame-1065 awareness-section">
+            <section className="frame-1065 awareness-section">
               <div className="awareness-content">
                 <div className="frame-1020">
                   <h3>Spreading Awareness, One Campus at a Time</h3>
@@ -467,8 +467,8 @@ export const DesktopHome = ({ className = "" }) => {
               </div>
             </section>
 
-            
-             <section className="frame-1065 awareness-section">
+            {/* Kasturbagram section here */}
+            <section className="frame-1065 awareness-section">
               <div className="awareness-content">
                 <div className="frame-1020">
                   <h3>Kasturbagram Fruit Trees Plantation Drive</h3>
@@ -484,6 +484,7 @@ export const DesktopHome = ({ className = "" }) => {
                 <KasturbagramCarousel />
               </div>
             </section>
+
             <div className="mission-points">
               <div className="mission-point">
                 <h4>Environmental Conservation</h4>
