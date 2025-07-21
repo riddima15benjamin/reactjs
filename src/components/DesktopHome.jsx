@@ -439,61 +439,53 @@ export const DesktopHome = ({ className = "" }) => {
           </div>
         </section>
 
-        {/* About Us Section */}
-        <section id="about" className="frame-1042">
-          <h3>About Our Mission</h3>
-          <div className="about-content">
-            <p>
-              The MedGreen Club of Indore was founded by doctors with a vision to transform 
-              our city into a model of environmental sustainability. We believe 
-              that every individual has the power to make a difference, and 
-              together, we can create lasting positive change.
-            </p>
-            <section className="frame-1065 awareness-section">
-              <div className="awareness-content">
-                <div className="frame-1020">
-                  <h3>Spreading Awareness, One Campus at a Time</h3>
-                  <p>
-                    At MedGreen, our mission is to create a sustainable and informed future by advocating for
-                    environmentally conscious menstrual practices. We actively visit schools and colleges across
-                    Indore to engage with young girls and educate them about the benefits of using menstrual cups. 
-                    By encouraging this eco-friendly and cost-effective alternative, we aim to reduce menstrual waste, 
-                    break taboos surrounding menstruation, and empower girls to make informed choices for their health and the planet.
-                  </p>
-                </div>
-                <AwarenessCarousel />
-              </div>
-            </section>
+        
+{/* About Us Section */}
+<section id="about" className="frame-1042">
+  <h3>About Our Mission</h3>
+  <div className="about-content">
+    <p>
+      The MedGreen Club of Indore was founded by doctors with a vision to transform 
+      our city into a model of environmental sustainability. We believe 
+      that every individual has the power to make a difference, and 
+      together, we can create lasting positive change.
+    </p>
+  </div>
+</section>
 
-            {/* Kasturbagram section here */}
-            <section className="frame-1065 awareness-section">
-              <div className="awareness-content">
-                <div className="frame-1020">
-                  <h3>Kasturbagram Fruit Trees Plantation Drive</h3>
-                  <p>
-                    As part of our mission to create greener, healthier communities, MedGreen Club of Indore undertook a large-scale 
-                    fruit tree plantation drive at Kasturbagram. Over 200 fruit-bearing trees were planted with the goal of contributing 
-                    to both ecological restoration and community nourishment. This initiative not only supports biodiversity and carbon 
-                    sequestration, but also offers a sustainable source of nutrition for the local residents in the coming years. 
-                    By focusing on fruit trees, we ensure that our green efforts yield long-term social and environmental benefits.
-                  </p>
-                </div>
-                
-                <KasturbagramCarousel />
-              </div>
-            </section>
+{/* Awareness Section */}
+<section className="frame-1065 awareness-section">
+  <div className="awareness-content">
+    <div className="frame-1020">
+      <h3>Spreading Awareness, One Campus at a Time</h3>
+      <p>
+        At MedGreen, our mission is to create a sustainable and informed future by advocating for
+        environmentally conscious menstrual practices. We actively visit schools and colleges across
+        Indore to engage with young girls and educate them about the benefits of using menstrual cups. 
+        By encouraging this eco-friendly and cost-effective alternative, we aim to reduce menstrual waste, 
+        break taboos surrounding menstruation, and empower girls to make informed choices for their health and the planet.
+      </p>
+    </div>
+    <AwarenessCarousel />
+  </div>
+</section>
 
-            <div className="mission-kasturbagram">
-              <h3>Our Mission at Kasturbagram</h3>
-              <p>As part of our mission to create greener, healthier communities, MedGreen Club of Indore undertook a large-scale 
-                    fruit tree plantation drive at Kasturbagram. Over 200 fruit-bearing trees were planted with the goal of contributing 
-                    to both ecological restoration and community nourishment. This initiative not only supports biodiversity and carbon 
-                    sequestration, but also offers a sustainable source of nutrition for the local residents in the coming years. 
-                    By focusing on fruit trees, we ensure that our green efforts yield long-term social and environmental benefits.
-                  </p>
-                  <div>  <KasturbagramCarousel />  </div>
-            </div>
-            
+{/* Kasturbagram Section */}
+<section className="frame-1065 awareness-section">
+  <div className="awareness-content">
+    <div className="frame-1020">
+      <h3>Kasturbagram Fruit Trees Plantation Drive</h3>
+      <p>
+        As part of our mission to create greener, healthier communities, MedGreen Club of Indore undertook a large-scale 
+        fruit tree plantation drive at Kasturbagram. Over 200 fruit-bearing trees were planted with the goal of contributing 
+        to both ecological restoration and community nourishment. This initiative not only supports biodiversity and carbon 
+        sequestration, but also offers a sustainable source of nutrition for the local residents in the coming years. 
+        By focusing on fruit trees, we ensure that our green efforts yield long-term social and environmental benefits.
+      </p>
+    </div>
+    <KasturbagramCarousel />
+  </div>
+</section>
 
             <div className="mission-points">
               <div className="mission-point">
