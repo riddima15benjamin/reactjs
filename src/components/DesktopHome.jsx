@@ -449,7 +449,7 @@ export const DesktopHome = ({ className = "" }) => {
               that every individual has the power to make a difference, and 
               together, we can create lasting positive change.
             </p>
-            
+            <div>test</div>
             <section className="frame-1065 awareness-section">
               <div className="awareness-content">
                 <div className="frame-1020">
