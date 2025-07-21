@@ -449,7 +449,6 @@ export const DesktopHome = ({ className = "" }) => {
               that every individual has the power to make a difference, and 
               together, we can create lasting positive change.
             </p>
-            <div>test</div>
             <section className="frame-1065 awareness-section">
               <div className="awareness-content">
                 <div className="frame-1020">
@@ -462,7 +461,6 @@ export const DesktopHome = ({ className = "" }) => {
                     break taboos surrounding menstruation, and empower girls to make informed choices for their health and the planet.
                   </p>
                 </div>
-                TEST
                 <AwarenessCarousel />
               </div>
             </section>
@@ -484,6 +482,18 @@ export const DesktopHome = ({ className = "" }) => {
                 <KasturbagramCarousel />
               </div>
             </section>
+
+            <div className="mission-kasturbagram">
+              <h3>Our Mission at Kasturbagram</h3>
+              <p>As part of our mission to create greener, healthier communities, MedGreen Club of Indore undertook a large-scale 
+                    fruit tree plantation drive at Kasturbagram. Over 200 fruit-bearing trees were planted with the goal of contributing 
+                    to both ecological restoration and community nourishment. This initiative not only supports biodiversity and carbon 
+                    sequestration, but also offers a sustainable source of nutrition for the local residents in the coming years. 
+                    By focusing on fruit trees, we ensure that our green efforts yield long-term social and environmental benefits.
+                  </p>
+                  <div>  <KasturbagramCarousel />  </div>
+            </div>
+            
 
             <div className="mission-points">
               <div className="mission-point">
