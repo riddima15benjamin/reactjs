@@ -439,17 +439,23 @@ export const DesktopHome = ({ className = "" }) => {
           </div>
         </section>
 
-        
-{/* About Us Section */}
-<section id="about" className="frame-1042">
-  <h3>About Our Mission</h3>
-  <div className="about-content">
-    <p>
-      The MedGreen Club of Indore was founded by doctors with a vision to transform 
-      our city into a model of environmental sustainability. We believe 
-      that every individual has the power to make a difference, and 
-      together, we can create lasting positive change.
-    </p>
+ {/* About Us Section - Hero Style */}
+<section className="frame-1021 about-section">
+  <div className="frame-1020">
+    <div className="hero-left">
+      <h1 className="hero-title">About Our Mission</h1>
+    </div>
+    <div className="hero-content">
+      <p>
+        The MedGreen Club of Indore was founded by doctors with a vision to transform 
+        our city into a model of environmental sustainability. We believe 
+        that every individual has the power to make a difference, and 
+        together, we can create lasting positive change.
+      </p>
+      <button className="button">
+        <span className="label">Learn More</span>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -486,6 +492,7 @@ export const DesktopHome = ({ className = "" }) => {
     <KasturbagramCarousel />
   </div>
 </section>
+
 
             <div className="mission-points">
               <div className="mission-point">
